@@ -12,7 +12,7 @@ app.use(express.json())
 //app.use(express.urlencoded({extended: false}))// for form-data
 app.use(cors({
     origin: ["http://localhost:3000",
-    "https://pet-task-app-mern.onrender.com"]
+    "https://pet-task-app-mern.onrender.com/"]
 }))
 app.use("/api/tasks", taskRoutes)// Позволяет использовать routes из файла task route
 
